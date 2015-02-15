@@ -1,4 +1,9 @@
-# Reproducible Research: Peer Assessment 1
+---
+title: "Reproducible Research: Peer Assessment 1"
+output: 
+  html_document:
+    keep_md: true
+---
 
 
 ## Loading and preprocessing the data
@@ -19,7 +24,7 @@ hist(total_steps_per_day$steps, breaks = 12, col = "lightblue",
      main = "Histogram of total number of steps per day", xlab="Total steps per day")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-2-1.png) 
+![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png) 
 
 ### 2. Calculate and report the mean and median total number of steps taken per day
 
@@ -52,7 +57,7 @@ plot(type = "l", col = "blue",
      main = "Average Daily Activity Pattern")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-4-1.png) 
+![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4-1.png) 
 
 ### 2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -120,7 +125,7 @@ hist(total_steps_per_day_imp$steps, breaks = 12, col = "lightblue",
      main = "Histogram of total number of steps per day (imputed dataset)", xlab="Total steps per day")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-8-1.png) 
+![plot of chunk unnamed-chunk-8](figure/unnamed-chunk-8-1.png) 
 
 ```r
 mean(total_steps_per_day_imp$steps)
@@ -170,5 +175,5 @@ xyplot(data=steps_wday, steps~interval|partition, layout=c(1,2), type="l",
        xlab="5-min interval", ylab="Average number of steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-10-1.png) 
+![plot of chunk unnamed-chunk-10](figure/unnamed-chunk-10-1.png) 
 
